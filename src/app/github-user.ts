@@ -1,5 +1,5 @@
 export class GithubUser {
-    constructor(){
+    constructor(public username:string, public repos:string, public followers:number, public following){
         
     }
 }
