@@ -10,7 +10,7 @@ import {RepositoryService} from '../repository.service';
 })
 export class GithubReposComponent implements OnInit {
   githubUserName:string=""
-  Repos:Repository[]=[]
+  Repos
   loading:boolean=false
   errorAlert
 constructor(private repositoryService:RepositoryService){
