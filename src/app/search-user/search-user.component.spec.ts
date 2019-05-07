@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearcUserComponent } from './searc-user.component';
+import { SearchUserComponent } from './search-user.component';
 
 describe('SearcUserComponent', () => {
-  let component: SearcUserComponent;
-  let fixture: ComponentFixture<SearcUserComponent>;
+  let component: SearchUserComponent;
+  let fixture: ComponentFixture<SearchUserComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearcUserComponent ]
+      declarations: [ SearchUserComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearcUserComponent);
+    fixture = TestBed.createComponent(SearchUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
