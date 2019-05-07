@@ -11,6 +11,6 @@ export class RepositoryService {
 baseUrl:string="https://api.github.com/"
   constructor(private http:HttpClient) { }
   fetchUser(githubUserName:string): Observable<Repository[]>{
-    return this.http.get<Repository[]>(this.baseUrl+'users/'+githubUserName+'/github-repos?access_token='+environment.token)
+    return this.http.get<Repository[]>(this.baseUrl+'users/'+githubUserName+'/?access_token='+environment.token)
   }
 }

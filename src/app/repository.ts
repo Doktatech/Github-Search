@@ -1,7 +1,8 @@
 export class Repository {
-    name:string;
-    id: number;
-    fork: boolean;
-    description: string;
-    created_at:Date;
+    constructor( public name:string,
+        public id: number,
+        public fork: boolean,
+        public description: string,
+        public created_at:Date){}
+ 
 }

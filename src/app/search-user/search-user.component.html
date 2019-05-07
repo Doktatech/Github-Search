@@ -10,14 +10,14 @@
   </div>
         <div *ngIf="loading">loading...</div>
 
-        <div *ngIf="errorMessage" class="alert alert-warning">
-            <strong>Warning!</strong> {{errorMessage}}
+        <div *ngIf="errorAlert" class="alert alert-warning">
+            <strong>Warning!</strong> {{errorAlert}}
         </div>
         <div>
-         <h3>User Name: {{user.login}}{{user.email}}</h3>
-        <h4>No. of repos: {{user.public_repos}}</h4>
-        <h4>Followers: {{user.followers}}</h4>
-        <h4>Following: {{user.following}}</h4>
+         <h3>User Name: {{ githubUser.login}}{{githubUser.email}}</h3>
+        <h4>No. of repos: {{githubUser.public_repos}}</h4>
+        <h4>Followers: {{githubUser.followers}}</h4>
+        <h4>Following: {{githubUser.following}}</h4>
         </div>
   
       

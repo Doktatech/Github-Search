@@ -11,7 +11,7 @@ import {UserService} from '../user.service';
 })
 export class SearchUserComponent implements OnInit {
   githubUserName:string=""
-  githubUser:User[]=[]
+  githubUser 
   loading:boolean=false;
   errorAlert; 
   constructor(private userService:UserService) {   

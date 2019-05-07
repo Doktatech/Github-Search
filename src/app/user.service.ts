@@ -10,6 +10,6 @@ export class UserService {
   baseUrl:string="https://api.github.com/"
   constructor(private http:HttpClient) { }
   fetchUser(githubUserName:string): Observable<User[]>{
-    return this.http.get<User[]>(this.baseUrl+'users/'+githubUserName+'user?access_token='+environment.token)
+    return this.http.get<User[]>(this.baseUrl+'users/'+githubUserName+'?access_token='+environment.token)
   }
 }
