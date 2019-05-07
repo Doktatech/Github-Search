@@ -1,12 +1,23 @@
-<body>
-    <div class="container">
-      <nav><p>Home</p> 
-      </nav>
-      <h1>Welcome GithubSearch Engine</h1>
-      <p> This a special serach engine that helps users search for GithHub 
-        users and Github Repos. In addition it gives users a chance 
-        to see more specific deatails of a particular GitHub user such
-         as:Number of Repos and Number of followers</p>
-  
+
+  <div class="row">
+  <div class="form-group">
+      
+      <input type="text" class="form-control" placeholder="Enter UserName" [(ngModel)]="githubUserName" name="githubUserName">
+  </div>
+    <div class="form-group">
+        <button type="button" (click)="fetchUser()" class="btn btn-primary">Get info</button>
     </div>
-  </body>
+  </div>
+        <div *ngIf="loading">loading...</div>
+
+        <div *ngIf="errorMessage" class="alert alert-warning">
+            <strong>Warning!</strong> {{errorMessage}}
+        </div>
+        <div>
+         <h3>User Name: {{user.login}}{{user.email}}</h3>
+        <h4>No. of repos: {{user.public_repos}}</h4>
+        <h4>Followers: {{user.followers}}</h4>
+        <h4>Following: {{user.following}}</h4>
+        </div>
+  
+      
