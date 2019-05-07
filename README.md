@@ -17,7 +17,8 @@ CSS - To add styling to the pages.
 Angular CLI version 7.3.6.
 The Github API key.
 TypeScript- for operation logic
-###B.D.D
+
+##B.D.D
 | Input                                             | Behaviour                                                                           | Output                                                                                                                       |   |   |
 |---------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---|---|
 | User submits a Github username search query       | The Application searches the API  Key for the requested User                        | The application returns returns the username,  his/her repos on the GitHub platform, number of followers and those following |   |   |
