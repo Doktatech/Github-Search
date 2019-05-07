@@ -18,11 +18,11 @@ Angular CLI version 7.3.6.
 The Github API key.
 TypeScript- for operation logic
 
-##B.D.D
+## B.D.D
 |                       Input                       | Behaviour                                                                           | Output                                                                                                                       |
 |:-------------------------------------------------:|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 |    User submits a Github username search query    | The Application searches the API  Key for the requested User                        | The application returns returns the username,  his/her repos on the GitHub platform, number of followers and those following |
-| Use submits a Github repository they wish to find | The application fetches all the repos present in the platform from the search query | Application returns all repos present  search using the passed parameter                                                     |
+| Use submits a Github repository they wish to find | The application fetches all the repos present in the platform from the search query | Application returns all repos present  search using the passed parameter                                                     |                                              |
 ## Support and contact details
 Any contributions are welcome through provided contacts in the profile page
 ### License
