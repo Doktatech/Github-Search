@@ -1,3 +1,15 @@
-<p>
-  <app-search-user></app-search-user>
-</p>
+<div class="container-fullwidth">
+  <div class="container">
+        <nav class="navbar navbar-inverse">
+        <h3 class="navbar-brand">ABOUT GITHUBSEARCH</h3>
+        <a routerLink='/search-user' routerLinkActive='active'>SEARCH USER</a>
+        <a routerLink='/search-repos' routerLinkActive='active'>SEARCH REPO</a> </nav>
+  </div>
+  <h1>Welcome to my GitHub Search Engine</h1>
+  <h4>This search engine enables users to search for repos in the github platform. Moreover a  user of this app can also be able to search for Github users which in turn returns the details of that
+         particular user such as number of Repos, Followers and the people following them.
+     </h4>
+<router-outlet></router-outlet>
+<pre>{{repos | json}}</pre>
+
+</div>
